@@ -43,9 +43,9 @@ video { width:100%!important; height:auto!important; }
 .videoWrapper iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
 
 /* Crousel style */
-.rwdCarousel { position:relative; }
+.rwdCarousel { position:relative;  }
 .rwdCarousel .cws-viewport { position:relative; overflow:hidden; }
-.rwdCarousel ul.slides li { flex:left; margin-right:15px; }
+.rwdCarousel ul.slides li { flex:left; margin-right:15px; height: 200px; }
 
 .defaultTheme .rwdCarousel ul.slides li { width:100px; padding:7px; border:1px solid #ddd; }
 .dropShadow .rwdCarousel ul.slides { padding:3px; }
