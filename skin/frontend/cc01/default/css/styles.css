@@ -496,7 +496,7 @@ textarea {
 }
 
 a {
-  color: #ce0021;
+  color: #636363;
   text-decoration: none;
 }
 
@@ -677,7 +677,7 @@ h6, .h6 {
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  color: #ce0021;
+  color: #333;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -3486,7 +3486,6 @@ a.skip-link {
   text-decoration: none;
   position: relative;
   display: block;
-/*  color: #636363; */
   color: #333;
   line-height: 30px;
   font-family: Arial, "Raleway", "Helvetica Neue", Verdana, sans-serif;

@@ -37,6 +37,16 @@
     <nav id="nav">
         <ol class="nav-primary">
             <?php echo $_menu ?>
+            <li class="level0 nav-5">
+                <a class="level0 " href="<?php echo $this->getUrl('wishlist')?>"><?php echo $this->__('FAVORITOS') ?>
+<?php
+    /** 
+     * Coracao do menu favoritos
+     * <span class="icon"><img src="<?php echo $this->getSkinUrl('images/heartfav.png') ?>" alt=""/></span> 
+     **/ ?>
+                    
+                </a>
+            </li>
         </ol>
     </nav>
 <?php endif ?>
