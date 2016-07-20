@@ -637,9 +637,9 @@ h6, .h6 {
 .product-name h1,
 .product-name .h1 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  color: #636363;
+  color: #333;
   border-bottom: 1px solid #ededed;
   padding-bottom: 3px;
   margin-bottom: 15px;
