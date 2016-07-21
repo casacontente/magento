@@ -501,13 +501,13 @@ a {
 }
 
 a:hover {
-  color: #ce6271;
-  text-decoration: underline;
+  color: #636363;
+  /* text-decoration: underline; */
 }
 
 a:focus {
-  outline-color: #3091c2;
-  color: #143d52;
+  outline-color: #636363;
+  color: #333;
 }
 
 ol,
@@ -942,14 +942,14 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button:active,
 #co-shipping-method-form .buttons-set .button:active,
 .footer .button:active {
-  background: #297aa3;
+  background: #ce0021;
   color: #FFFFFF;
 }
 .button:focus,
 .cart-table .product-cart-actions .button:focus,
 #co-shipping-method-form .buttons-set .button:focus,
 .footer .button:focus {
-  background-color: #297aa3;
+  background-color: #ce0021;
   outline: none;
   color: #FFFFFF;
 }
@@ -1195,7 +1195,7 @@ a.button:hover {
 
 .btn-remove:after {
   content: 'X';
-  color: #ce0021;
+  color: #ce6271;
   height: 20px;
   line-height: 20px;
   width: 100%;
@@ -1999,7 +1999,7 @@ span.weee {
   }
 }
 .no-touch .product-image:hover {
-  border-color: #ce0021;
+  border-color: #636363;
 }
 
 /* -------------------------------------------- *
@@ -4235,7 +4235,7 @@ h3.product-name a:hover,
 h4.product-name a:hover,
 h5.product-name a:hover,
 p.product-name a:hover {
-  color: #ce0021;
+  color: #636363;
   text-decoration: none;
 }
 
