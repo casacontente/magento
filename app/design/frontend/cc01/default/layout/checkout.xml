@@ -36,14 +36,14 @@ Default layout, loads most of the pages
 
         <!-- Mage_Checkout -->
         <reference name="top.links">
-            <block type="checkout/links" name="checkout_cart_link">
+            <!--block type="checkout/links" name="checkout_cart_link">
                 <action method="addCartLink"></action>
                 <action method="addCheckoutLink"></action>
-            </block>
+            </block-->
         </reference>
 
         <reference name="header">
-            <block type="checkout/cart_minicart" name="minicart_head" template="checkout/cart/minicart.phtml" before="-">
+            <!--block type="checkout/cart_minicart" name="minicart_head" template="checkout/cart/minicart.phtml" before="-">
                 <block type="checkout/cart_sidebar" name="minicart_content" template="checkout/cart/minicart/items.phtml">
                     <action method="addItemRender"><type>default</type><block>checkout/cart_item_renderer</block><template>checkout/cart/minicart/default.phtml</template></action>
                     <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/minicart/default.phtml</template></action>
@@ -57,7 +57,7 @@ Default layout, loads most of the pages
                         <label>Shopping Cart Sidebar Extra Actions</label>
                     </block>
                 </block>
-            </block>
+            </block-->
         </reference>
 
         <reference name="right">

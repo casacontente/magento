@@ -72,6 +72,12 @@
                     <span class="label"><?php echo $this->__('Account'); ?></span>
                 </a>
                 
+                <!-- Account menu -->
+                
+                <div id="header-account" class="skip-content">
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                </div>
+                
                 <!-- Cart -->
 
                 <div class="header-minicart">
@@ -79,7 +85,7 @@
                 </div>
                 
             </div>
-
+            
 
         </div>
 
@@ -97,9 +103,9 @@
 
         <!-- Account -->
 
-        <div id="header-account" class="skip-content">
+        <!--div id="header-account" class="skip-content">
             <?php echo $this->getChildHtml('topLinks') ?>
-        </div>
+        </div-->
         
     </div>
     

@@ -437,6 +437,7 @@ fieldset {
 
 img {
   display: block;
+  
 }
 
 ol,
@@ -2078,7 +2079,7 @@ span.weee {
   margin-top: 10px;
   margin-bottom: 15px;
   border-bottom: 1px solid #cccccc;
-  border-top: 1px solid #cccccc;
+  /* border-top: 1px solid #cccccc; */
   background: #ffffff;
   padding: 5px 10px 0px 10px;
 }
@@ -3476,7 +3477,7 @@ a.skip-link {
     margin-top: -43px;
     margin-left: 230px;
       
-    border-top: 1px solid #ededed;
+    /*border-top: 1px solid #ededed;*/
     /* border-bottom: 1px solid #ededed; */
   }
 }
@@ -3591,7 +3592,7 @@ a.skip-link {
     z-index: 200;
   }
   .nav-primary li.level0 ul {
-    background: #FBFBFB;
+    background: #ffffff;
     border: solid 1px #cccccc;
     position: absolute;
     left: 0;
@@ -3747,19 +3748,24 @@ a.skip-link {
     vertical-align: top;
     display: inline-block;
     padding: 0 10px;
+    right: 10px;
     text-transform: uppercase;
   }
 
   #header-account.skip-active {
-    background: #FBFBFB;
+    background: #ffffff;
     border: solid 1px #cccccc;
-    display: block;
+    display: inline-block;
     position: absolute;
     z-index: 200;
     top: 40px;
-    right: 115px;
-    width: 200px;
+    right: 10px;
+    width: 150px;
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 1.5px;
   }
+    
 
   #header-account a {
     display: block;
@@ -3769,7 +3775,7 @@ a.skip-link {
   }
 
   #header-account a:hover {
-    color: #ce0021;
+    color: #ce6271;
   }
 }
 /* -------------------------------------------- *
@@ -3783,14 +3789,15 @@ a.skip-link {
   position: relative;
   display: block;
   padding: 5px 10px;
-  line-height: 23px;
+  line-height: 22px;
   text-align: center;
-
+  border-bottom: 1px solid #cccccc;
 }
 
 #header-account a:hover {
-  color: #ce0021;
+  color: #ce6271;
 }
+
 
 /* ============================================ *
  * Header - Cart
@@ -4729,7 +4736,7 @@ p.product-name a:hover {
   font-weight: normal;
   margin-bottom: 0px;
   padding: 7px 10px 7px 24px;
-  border-width: 1px 0px 1px 0px;
+  border-width: 0px 0px 1px 0px;
   border-style: solid;
   border-color: #cccccc;
   position: relative;
@@ -5055,6 +5062,7 @@ p.product-name a:hover {
   width: 50%;
   float: right;
   clear: right;
+    
 }
 
 @media only screen and (max-width: 850px) {
