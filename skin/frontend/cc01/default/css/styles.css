@@ -3639,9 +3639,18 @@ a.skip-link {
     margin-top: -3px;
   }
 }
+
+.nav-primary li.level0.nav-5 .fav-heart img{
+    background-position: right;
+    margin: -4px 2px; 
+    display: inline-block;
+}
+
 .nav-primary li.menu-active > ul {
   display: block;
 }
+
+
 
 /* ============================================ *
  * Search - Skip Link
