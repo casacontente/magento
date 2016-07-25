@@ -86,18 +86,21 @@ Wishlist pages
                     <block type="wishlist/customer_wishlist_item_column_comment" name="customer.wishlist.item.info" template="wishlist/item/column/info.phtml">
                         <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.update" template="wishlist/button/update.phtml" />
                     </block>
-                    <block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.quantity" template="wishlist/item/column/quantity.phtml">
+                    <!--block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.quantity" template="wishlist/item/column/quantity.phtml">
                         <action method="setTitle" translate="title">
                             <title>Qty</title>
                         </action>
                         <block type="wishlist/customer_wishlist_item_options" name="customer.wishlist.item.options" />
-                    </block>
-                    <block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.price" template="wishlist/item/column/price.phtml">
+                    </block-->
+                    
+                    <!--block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.price" template="wishlist/item/column/price.phtml">
                         <action method="setTitle" translate="title">
                             <title>Price</title>
                         </action>
                         <block type="wishlist/customer_wishlist_item_options" name="customer.wishlist.item.options" />
-                    </block>
+                    </block-->
+                    
+                    
                     <block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.cart" template="wishlist/item/column/cart.phtml">
                         <block type="wishlist/customer_wishlist_item_options" name="customer.wishlist.item.options" />
                     </block>
@@ -105,7 +108,7 @@ Wishlist pages
                 </block>
                 <block type="core/text_list" name="customer.wishlist.buttons" as="control_buttons">
                     <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.share" template="wishlist/button/share.phtml" />
-                    <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.toCart" template="wishlist/button/tocart.phtml" />
+                    <!--block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.toCart" template="wishlist/button/tocart.phtml" /-->
                     <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.update" template="wishlist/button/update.phtml" />
                 </block>
             </block>
@@ -133,10 +136,12 @@ Wishlist pages
         <reference name="product.info">
             <block type="wishlist/item_configure" name="product.info.addto" as="addto" template="wishlist/item/configure/addto.phtml" />
         </reference>
+        
         <reference name="product.info.options.wrapper.bottom">
             <action method="unsetChild"><name>product.info.addto</name></action>
             <action method="append"><block>product.info.addto</block></action>
         </reference>
+        
     </wishlist_index_configure>
 
     <wishlist_shared_index translate="label">
