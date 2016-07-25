@@ -34,9 +34,20 @@
             <input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" value="<?php echo max($this->getProductDefaultQty() * 1, 1) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
         </div>
         <?php endif; ?>
+        
+        <?php /* BOTÃO DE COMPRAR (TELA DO PRODUTO)
+        
         <div class="add-to-cart-buttons">
             <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
             <?php echo $this->getChildHtml('', true, true) ?>
         </div>
+        */ ?>
+        
+        <?php /* BOTÃO FAVORITOS */ ?>
+                    
+        <div class="add-to-wishlist-buttons">
+            <button type="button" title="<?php echo $this->quoteEscape($this->__('Add to Wishlist')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Wishlist') ?></span></span></button>
+        </div>
+        
     </div>
 <?php endif; ?>

@@ -36,14 +36,15 @@
 <?php if($_menu): ?>
     <nav id="nav">
         <ol class="nav-primary">
+            
+            <?php /* CHAMA AS CATEGORIAS PARA O MENU */?>
             <?php echo $_menu ?>
+            
+            <?php /* ADICIONA OS FAVORITOS NO MENU */?>
             <li class="level0 nav-5">
                 <a class="fav-heart"><img src="<?php echo $this->getSkinUrl('images/heartfav.png') ?>" alt="" border="0"/>
    
-                <span class="level0 " href="<?php echo $this->getUrl('wishlist')?>"><?php echo $this->__('FAVORITOS') ?> </span>
-  
-    
-                    
+                <span class="level0 " href="<?php echo $this->getUrl('wishlist')?>"><?php echo $this->__('FAVORITOS') ?> </span>                 
                 </a>
             </li>
         </ol>
