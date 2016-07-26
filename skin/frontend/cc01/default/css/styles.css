@@ -4024,8 +4024,10 @@ a.skip-link {
 .footer .block-title,
 .footer address {
   color: #ce6271;
+  border-top: 0;
   /*border-bottom: 1px solid #cccccc;*/
 }
+
 .footer .links {
   float: left;
   width: 17%;
