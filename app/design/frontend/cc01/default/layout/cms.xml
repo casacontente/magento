@@ -32,13 +32,24 @@ Default layout, loads most of the pages
 
     <default>
         <reference name="footer">
-            <block type="cms/block" name="cms_footer_links" before="footer_links">
+            
+            <block type="cms/block" name="footer_links_products" before="footer_links">
+                <action method="setBlockId"><block_id>footer_links_products</block_id></action>
+            </block>
+            
+            <block type="cms/block" name="cms_footer_links" before="footer_links" >
                 <!--
                     The content of this block is taken from the database by its block_id.
                     You can manage it in admin CMS -> Static Blocks
                 -->
                 <action method="setBlockId"><block_id>footer_links_company</block_id></action>
             </block>
+            
+            <block type="cms/block" name="footer_links_quick" before="footer_links">
+                <action method="setBlockId"><block_id>footer_links_quick</block_id></action>
+            </block>
+            
+          
             <block type="cms/block" name="cms_footer_links_sm" after="footer_links2">
                 <!--
                     The content of this block is taken from the database by its block_id.
@@ -46,7 +57,13 @@ Default layout, loads most of the pages
                 -->
                 <action method="setBlockId"><block_id>footer_links_sm</block_id></action>
             </block>
+
+            
+
+            
         </reference>
+
+        
     </default>
 
     <cms_menu>
