@@ -618,6 +618,7 @@ h6, .h6 {
 
 .availability.in-stock {
   color: #11b400;
+  display: none;
 }
 
 .availability.available-soon,
