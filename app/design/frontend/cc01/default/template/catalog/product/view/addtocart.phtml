@@ -48,6 +48,7 @@
         <div class="add-to-wishlist-buttons">
             <button type="button" title="<?php echo $this->quoteEscape($this->__('Add to Wishlist')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Wishlist') ?></span></span>        
             </button>
+            <?php echo $_product->getChildHtml('', true, true) ?>
         </div>
         
     </div>
